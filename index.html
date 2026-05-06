@@ -1,13 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>아라온스쿨EXAMFLOW</title>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- ✅ 이 부분 추가 — Netlify 봇이 폼을 인식하기 위해 필요 -->
+    <form name="consultation" data-netlify="true" hidden>
+      <input type="text" name="이름" />
+      <input type="tel" name="연락처" />
+      <input type="text" name="학교급" />
+      <input type="text" name="학년" />
+    </form>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
